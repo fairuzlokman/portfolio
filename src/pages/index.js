@@ -36,7 +36,7 @@ export default function Home() {
             style={{ background: `linear-gradient(to bottom right, ${randomColor}, rgba(0, 0, 0, 1))` }}
             className={`w-full h-full rounded-lg flex justify-end items-end p-3`}
           >
-            <p className='font-extrabold text-3xl text-white/80'>{i + 1}</p>
+            <p className='font-extrabold text-xs sm:text-md md:text-xl lg:text-3xl text-white/80 transition-all'>{i + 1}</p>
           </div>
         </div>
       )
@@ -53,7 +53,7 @@ export default function Home() {
         <div className={`realtive ${clicked ? 'w-full' : 'w-1/5'} transition-all duration-500 h-full rounded-lg bg-white/5 overflow-y-scroll no-scrollbar`}>
           <div className='sticky top-0 bg-[#0D0D0D] bg-opacity-95 flex justify-between items-center p-5 rounded-t-lg text-white/50 font-bold'>
             <p className='hover:text-white'>Projects</p>
-            <p onClick={() => setClicked(!clicked)} className='hover:text-white cursor-pointer'>{clicked ? <span>&lt;-</span> : <span>-&gt;</span>}</p>
+            <p onClick={() => setClicked(!clicked)} className='hover:text-white cursor-pointer whitespace-nowrap'>{clicked ? <span>&lt;-</span> : <span>-&gt;</span>}</p>
           </div>
           <div className='flex flex-wrap px-2'>
             {createBox(30)}
