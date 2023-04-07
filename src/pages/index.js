@@ -97,8 +97,8 @@ export default function Home() {
         <p className='p-5 rounded-t-lg text-white/50 hover:text-white font-bold text-lg'>Connect</p>
         <div className='flex flex-col gap-10'>
           {socialMedia.map((e, i) => (
-            <a target='_blank' href={e.link}>
-              <span key={i} className='text-white/50 hover:text-white text-2xl'>
+            <a key={i} target='_blank' href={e.link}>
+              <span className='text-white/50 hover:text-white text-2xl'>
                 {e.icon}
               </span>
             </a>
