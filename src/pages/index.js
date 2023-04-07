@@ -31,7 +31,7 @@ export default function Home() {
       const randomColor = `rgba(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, 0.8)`
       
       arr.push(
-        <div key={i} className={`p-3 ${clicked ? 'w-1/4' : 'w-full'} transition-all duration-700 aspect-square`}>
+        <div key={i} className={`p-3 ${clicked ? 'w-1/4 aspect-square' : 'w-full aspect-auto'} transition-all duration-700`}>
           <div
             style={{ background: `linear-gradient(to bottom right, ${randomColor}, rgba(0, 0, 0, 1))` }}
             className={`w-full h-full rounded-lg flex justify-end items-end p-3`}
@@ -50,8 +50,8 @@ export default function Home() {
       {/* Projects and bio */}
       <div className={`w-full h-full flex ${clicked ? 'gap-0' : 'gap-2'} rounded-lg`}>
         {/* Projects */}
-        <div className={`realtive ${clicked ? 'w-full' : 'w-1/5'} transition-all duration-500 h-full rounded-lg bg-white/5 overflow-y-scroll no-scrollbar`}>
-          <div className='sticky top-0 bg-[#0D0D0D] bg-opacity-95 flex justify-between items-center p-5 rounded-t-lg text-white/50 font-bold'>
+        <div className={`realtive ${clicked ? 'w-full' : 'w-1/5'} transition-all duration-500 h-full rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
+          <div className='sticky top-0 bg-[#1A1A1A] bg-opacity-95 flex justify-between items-center p-5 rounded-t-lg text-white/50 font-bold text-lg'>
             <p className='hover:text-white'>Projects</p>
             <p onClick={() => setClicked(!clicked)} className='hover:text-white cursor-pointer whitespace-nowrap'>{clicked ? <span>&lt;-</span> : <span>-&gt;</span>}</p>
           </div>
@@ -61,9 +61,9 @@ export default function Home() {
         </div>
 
         {/* Bio */}
-        <div className={`relative ${clicked ? 'w-0 opacity-0' : 'w-4/5'} transition-all duration-500 h-full rounded-lg bg-white/5 overflow-y-scroll no-scrollbar`}>
-          <div className='sticky top-0 bg-[#0D0D0D] bg-opacity-95 p-5 rounded-t-lg flex justify-between items-center'>
-            <p className='w-fit text-white/50 hover:text-white font-bold'>Fairuz Lokman</p>
+        <div className={`relative ${clicked ? 'w-0 opacity-0' : 'w-4/5'} transition-all duration-500 h-full rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
+          <div className='sticky top-0 bg-[#1A1A1A] bg-opacity-95 p-5 rounded-t-lg flex justify-between items-center'>
+            <p className='w-fit text-white/50 hover:text-white font-bold text-lg'>Fairuz Lokman</p>
             <FaRegUserCircle className='text-2xl text-white/50 hover:text-white' />
           </div>
           <div className='px-5 my-3'>
@@ -93,8 +93,8 @@ export default function Home() {
       </div>
 
       {/* Connect */}
-      <div className='w-fit h-full flex flex-col justify-between items-center rounded-lg bg-white/5'>
-        <p className='p-5 rounded-t-lg text-white/50 hover:text-white font-bold'>Connect</p>
+      <div className='w-fit h-full flex flex-col justify-between items-center rounded-lg bg-white/10'>
+        <p className='p-5 rounded-t-lg text-white/50 hover:text-white font-bold text-lg'>Connect</p>
         <div className='flex flex-col gap-10'>
           {socialMedia.map((e, i) => (
             <a target='_blank' href={e.link}>
