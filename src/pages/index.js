@@ -60,7 +60,7 @@ export default function Home() {
               <p className='hover:text-white'>Projects</p>
               <p onClick={() => setExpandProject(!expandProject)} className='hover:text-white cursor-pointer whitespace-nowrap hidden md:block'>{expandProject ? <span>&lt;-</span> : <span>-&gt;</span>}</p>
             </div>
-            <div className='h-[30vh] md:h-auto flex md:flex-wrap px-2 py-2 md:pt-0 overflow-x-scroll no-scrollbar'>
+            <div className='h-[30vh] md:h-auto flex md:flex-wrap px-2 pb-2 overflow-x-scroll no-scrollbar'>
               {createBox(30)}
             </div>
           </div>
