@@ -55,7 +55,7 @@ export default function Home() {
         {/* Projects and bio */}
         <div className={`w-full h-full flex flex-col-reverse md:flex-row ${clicked ? 'gap-0' : 'gap-2'} rounded-lg`}>
           {/* Projects */}
-          <div className={`h-[60vh] md:h-auto relative ${clicked ? 'w-full' : 'w-full md:w-1/5'} transition-all duration-500 h-full rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
+          <div className={`h-[60vh] md:h-full relative ${clicked ? 'w-full' : 'w-full md:w-1/5'} transition-all duration-500 rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
             <div className='sticky top-0 bg-[#1A1A1A] bg-opacity-95 flex justify-between items-center gap-1 p-5 rounded-t-lg text-white/50 font-bold'>
               <p className='hover:text-white'>Projects</p>
               <p onClick={() => setClicked(!clicked)} className='hover:text-white cursor-pointer whitespace-nowrap hidden md:block'>{clicked ? <span>&lt;-</span> : <span>-&gt;</span>}</p>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
 
           {/* Bio */}
-          <div className={`h-[60vh] md:h-auto relative ${clicked ? 'w-0 opacity-0' : 'w-full md:w-4/5'} transition-all duration-500 h-full rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
+          <div className={`h-[60vh] md:h-full relative ${clicked ? 'w-0 opacity-0' : 'w-full md:w-4/5'} transition-all duration-500 rounded-lg bg-white/10 overflow-y-scroll no-scrollbar`}>
             <div className='sticky top-0 bg-[#1A1A1A] bg-opacity-95 p-5 rounded-t-lg flex justify-between items-center'>
               <p className='w-fit text-white/50 hover:text-white font-bold'>Fairuz Lokman</p>
               <FaRegUserCircle className='text-2xl text-white/50 hover:text-white' />
