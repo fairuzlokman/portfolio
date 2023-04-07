@@ -99,8 +99,8 @@ export default function Home() {
 
         {/* Connect */}
         <div className='w-full md:w-fit h-full flex flex-row md:flex-col justify-between items-center rounded-lg bg-white/10'>
-          <p className='p-5 rounded-t-lg text-white/50 hover:text-white font-bold'>Connect</p>
-          <div className='flex flex-row md:flex-col gap-10'>
+          <p className='p-5 rounded-t-lg text-white/50 hover:text-white font-bold hidden md:block'>Connect</p>
+          <div className='flex flex-row md:flex-col gap-6 md:gap-10 p-5'>
             {socialMedia.map((e, i) => (
               <a key={i} target='_blank' href={e.link}>
                 <span className='text-white/50 hover:text-white text-2xl'>
@@ -109,7 +109,7 @@ export default function Home() {
               </a>
             ))}
           </div>
-          <a href='mailto:fairuzlokman99@gmail.com' className='w-full rounded-b-lg text-white/50 hover:text-white flex justify-center items-center p-5 text-2xl'>
+          <a href='mailto:fairuzlokman99@gmail.com' className='md:w-full rounded-b-lg text-white/50 hover:text-white flex justify-center items-center p-5 text-2xl'>
             <MdEmail/>
           </a>
         </div>
