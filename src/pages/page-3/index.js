@@ -39,7 +39,7 @@ const Page3 = () => {
             <div
                 key={i}
                 className={`w-[5%] aspect-square bg-white outline text-6xl font-bold flex justify-center items-center ${
-                    i === activeIndex ? 'bg-red-400 animate-bounce' : ''
+                    i === activeIndex ? 'bg-slate-400 animate-bounce' : ''
                 } transition-all`}
             >
                 {

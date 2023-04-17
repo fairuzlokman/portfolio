@@ -1,6 +1,5 @@
-import { getWeather } from '@/services/api/weather'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaRegUserCircle, FaTwitter } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
           
@@ -46,21 +45,6 @@ export default function Home() {
   
     return arr
   }
-
-  // const [weatherData, setWeatherData] = useState(null)
-
-  // const fetchData = async (latitude, longitude) => {
-  //   const res = await getWeather(latitude, longitude)
-  //   setWeatherData(res)
-  // }
-
-  // useEffect(() => {
-  //   if (!weatherData) {
-  //     fetchData(101.6841, 3.1319)
-  //   }
-  // }, [])
-
-  // console.log({weatherData})
 
   return (
     <>
